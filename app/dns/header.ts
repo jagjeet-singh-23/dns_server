@@ -1,10 +1,10 @@
-enum OpCode {
+export enum OpCode {
   QUERY = 0,
   IQUERY = 1,
   STATUS = 2,
 }
 
-enum ResponseCode {
+export enum ResponseCode {
   NO_ERROR = 0,
   FORMAT_ERROR = 1,
   SERVER_FAILURE = 2,
@@ -13,7 +13,7 @@ enum ResponseCode {
   REFUSED = 5,
 }
 
-interface TDNSHeader {
+export interface TDNSHeader {
   id: number;
   qr: number;
   opcode: OpCode;
