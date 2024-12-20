@@ -7,8 +7,8 @@ import DNSQuestion, {
 } from "./dns/questions";
 
 const defaultHeader: TDNSHeader = {
-  id: 0,
-  qr: 0,
+  id: 1234,
+  qr: 1,
   opcode: OpCode.QUERY,
   aa: 0,
   tc: 0,
